@@ -22,6 +22,9 @@ https://github.com/kazuar/raspberrypi_voice_control
 Very nice project too from Anderson69s about how to duplicate an IR remote control (in French):
 https://anderson69s.com/2015/08/04/raspberry-pi-dupliquer-sa-telecommande-ir/
 
+Project with Alexa :
+https://hackernoon.com/make-your-tv-voice-controlled-through-amazon-alexa-and-raspberry-pi-a6373b7cf871
+
 LIRC with Python :
 https://pypi.org/project/python-lirc/
 
