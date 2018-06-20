@@ -14,6 +14,9 @@ Control IR receivers (TV, HTPC...) with voice commands on RaspberryPi (speechrec
 
 # Sources
 
-Very nice project from Tzahi Vidas :
+Very nice project from Tzahi Vidas for the part speech recognition:
 http://kazuar.github.io/raspberry_pi_voice_recognition/
 https://github.com/kazuar/raspberrypi_voice_control
+
+Very nice project too from Anderson69s about how to duplicate an IR remote control (in French):
+https://anderson69s.com/2015/08/04/raspberry-pi-dupliquer-sa-telecommande-ir/
