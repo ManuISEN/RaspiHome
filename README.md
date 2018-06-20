@@ -20,3 +20,6 @@ https://github.com/kazuar/raspberrypi_voice_control
 
 Very nice project too from Anderson69s about how to duplicate an IR remote control (in French):
 https://anderson69s.com/2015/08/04/raspberry-pi-dupliquer-sa-telecommande-ir/
+
+LIRC with Python :
+https://pypi.org/project/python-lirc/
