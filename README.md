@@ -4,6 +4,7 @@ Control IR receivers (TV, HTPC...) with voice commands on RaspberryPi (speechrec
 # Hardware used:
 
 - Raspberry Pi (3/2 Model B, 1 Model A+/B+, Zero/Zero-W)
+- USB microphone
 - ANAVI Infrared pHAT : https://www.indiegogo.com/projects/anavi-infrared-phat-for-raspberry-pi#/
 
 # Installation requirements
