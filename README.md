@@ -24,3 +24,7 @@ https://anderson69s.com/2015/08/04/raspberry-pi-dupliquer-sa-telecommande-ir/
 
 LIRC with Python :
 https://pypi.org/project/python-lirc/
+
+# Documentation
+
+ANAVI Infrared pHAT : http://anavi.technology/files/anavi-infrared-phat.pdf
