@@ -40,10 +40,13 @@ def main():
                 # tv = cec.Device(0) # to be changed in order to send IR ON command to the TV
                 # tv.power_on()
                 os.system('irsend SEND_ONCE {} {}'.format(lirc_file_conf, power_button_command))
+                print("TV ON")
             elif TURN_TV_OFF in command.lower():
                 # Get tv device and turn it off
                 # tv = cec.Device(0) # to be changed in order to send IR OFF commande to the TV
-                tv.standby()
+                # tv.standby()
+                os.system('irsend SEND_ONCE {} {}'.format(lirc_file_conf, power_button_command))
+                print("TV OFF")
         except LookupError:
             # In case of an exception
             print("Could not translate audio")
