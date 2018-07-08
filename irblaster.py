@@ -32,7 +32,7 @@ def main():
 
         try:
             # Try to recognize the audio
-            command = r.recognize(audio)
+            command = r.recognize_google(audio)
             print("Detected speech:{0}".format(command))
             # Check the current command
             if TURN_TV_ON in command.lower():
