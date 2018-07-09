@@ -12,7 +12,7 @@ hello = sr.AudioFile('hello.wav')
 
 with hello as source:
   r.adjust_for_ambient_noise(source)
-  print "Adjusting ambient noise..."
+  print ("Adjusting ambient noise...")
   audio = r.record(source)
   
 # recognize audio using Speech Recognition
