@@ -19,8 +19,8 @@ mic = sr.Microphone()
 
 with mic as source:
   r.adjust_for_ambient_noise(source)
-  print "Adjusting ambient noise..."
-  print "Say something!"
+  print ("Adjusting ambient noise...")
+  print ("Say something!")
   audio = r.listen(source)
   
 # recognize speech using Google Speech Recognition
