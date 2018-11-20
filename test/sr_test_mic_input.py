@@ -26,7 +26,7 @@ with mic as source:
 # recognize speech using Google Speech Recognition
 try:
   print("Google Speech Recognition thinks you said in English: -  " + r.recognize_google(audio, language = "en-US"))
-  print("Google Speech Recognition thinks you said in English: -  " + r.recognize_google(audio, language = "fr-FR"))
+  print("Google Speech Recognition thinks you said in French: -  " + r.recognize_google(audio, language = "fr-FR"))
 except sr.UnknowValueError:
   print("Google Speech Recognition could not understand audio")
 except sr.RequestError as e:
