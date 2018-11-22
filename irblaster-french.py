@@ -27,6 +27,7 @@ def main():
     while True:
         # Record sound
         with sr.Microphone() as source:
+            r.adjust_for_ambient_noise(source)
             print("Recording")
             audio = r.listen(source)
 
@@ -40,7 +41,7 @@ def main():
                 # Get tv device and turn it on
                 os.system('irsend SEND_ONCE tv KEY_POWER')
                 print("TV ON")
-            if TURN_TV_OFF in command.lower():
+            if ETEINDRE_TV in command.lower():
                 # Get tv device and turn it off
                 os.system('irsend SEND_ONCE tv KEY_POWER')
                 print("TV OFF")
