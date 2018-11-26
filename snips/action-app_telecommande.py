@@ -18,10 +18,10 @@ MQTT_IP_ADDR = "localhost"
 MQTT_PORT = 1883
 MQTT_ADDR = "{}:{}".format(MQTT_IP_ADDR, str(MQTT_PORT))
 
-REMOTE_ADDR = 'http://hd1.freebox.fr/pub/remote_control?code='
+# REMOTE_ADDR = 'http://hd1.freebox.fr/pub/remote_control?code='
 
 
-class TelecommandeFreebox(object):
+class Telecommande(object):
     """Class used to wrap action code with mqtt connection
         Please change the name refering to your application
     """
@@ -36,16 +36,16 @@ class TelecommandeFreebox(object):
         # start listening to MQTT
         self.start_blocking()
 
-    def playPause(self,FREEREMOTECODE):
-        time.sleep(1)
-        requests.get(REMOTE_ADDR+FREEREMOTECODE+'&key=play')
+    #def playPause(self,FREEREMOTECODE):
+    #    time.sleep(1)
+    #    requests.get(REMOTE_ADDR+FREEREMOTECODE+'&key=play')
 
 
-    def askFreeboxCommand_callback(self, hermes, intent_message):
+    def askCommand_callback(self, hermes, intent_message):
         # terminate the session first if not continue
         hermes.publish_end_session(intent_message.session_id, "")
 
-        commandeFreebox = None
+        commande = None
 
         commandeFreebox = intent_message.slots.TvCommand.first().value
 
