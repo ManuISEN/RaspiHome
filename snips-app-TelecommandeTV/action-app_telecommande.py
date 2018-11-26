@@ -9,7 +9,7 @@ from hermes_python.ontology import *
 import io
 import os
 
-CONFIG_INI = "config.ini"
+# CONFIG_INI = "config.ini"
 
 # If this skill is supposed to run on the satellite,
 # please get this mqtt connection info from <config.ini>
@@ -52,12 +52,11 @@ class Telecommande(object):
         if commandeTv is None:
             telecommande_msg = "Je ne comprend pas ce que vous me demandez"
 
-
         # FREEREMOTECODE = self.config.get("secret").get("freeremotecode")
 
         if commandeTv == 'power':
             # self.powerFreebox(FREEREMOTECODE)
-			os.system('irsend SEND_ONCE tv KEY_POWER')
+		os.system('irsend SEND_ONCE tv KEY_POWER')
 			
 		""" NOT IMPLEMENTED YET
         elif commandeTv == 'pip':
